@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .brand-gradient {
+    background: linear-gradient(135deg, #FF5E62 0%, #FF3B81 50%, #9B51E0 100%);
+  }
+  
+  .brand-gradient-hover {
+    background: linear-gradient(135deg, #FF4B50 0%, #E82A70 50%, #8A3ED0 100%);
+  }
+
+  .text-brand-gradient {
+    background: linear-gradient(135deg, #FF5E62 0%, #FF3B81 50%, #9B51E0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: #0F172A;
+  background-color: #FAFAFC;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
